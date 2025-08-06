@@ -6,22 +6,6 @@
   <title>Surya Ravi | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --bg-color: #f9f9f9;
-      --text-color: #333;
-      --header-bg: #004080;
-      --header-text: #fff;
-      --accent-color: #004080;
-    }
-
-    [data-theme="dark"] {
-      --bg-color: #121212;
-      --text-color: #e0e0e0;
-      --header-bg: #1a1a1a;
-      --header-text: #ffffff;
-      --accent-color: #66b2ff;
-    }
-
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
@@ -30,17 +14,15 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      transition: background 0.5s, color 0.5s;
+      background: #f9f9f9;
+      color: #333;
     }
 
     header {
-      background: var(--header-bg);
-      color: var(--header-text);
+      background: #004080;
+      color: #fff;
       padding: 60px 20px;
       text-align: center;
-      position: relative;
     }
 
     header h1 {
@@ -53,29 +35,21 @@
       margin-top: 10px;
     }
 
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      font-size: 1.5rem;
-    }
-
     .resume-button {
       margin-top: 20px;
     }
 
     .resume-button a {
       text-decoration: none;
-      background: var(--header-text);
-      color: var(--header-bg);
+      background: #fff;
+      color: #004080;
       padding: 10px 20px;
       border-radius: 5px;
       transition: background 0.3s, color 0.3s;
     }
 
     .resume-button a:hover {
-      background: var(--accent-color);
+      background: #004080;
       color: #fff;
     }
 
@@ -102,9 +76,9 @@
     }
 
     h2 {
-      border-left: 5px solid var(--accent-color);
+      border-left: 5px solid #004080;
       padding-left: 10px;
-      color: var(--accent-color);
+      color: #004080;
     }
 
     ul, .project {
@@ -125,11 +99,11 @@
     .icons {
       font-size: 1.2rem;
       margin-right: 10px;
-      color: var(--accent-color);
+      color: #004080;
     }
 
     .contact a {
-      color: var(--accent-color);
+      color: #004080;
       text-decoration: none;
     }
 
@@ -158,9 +132,6 @@
 </head>
 <body>
   <header>
-    <div class="theme-toggle" onclick="toggleTheme()">
-      <i class="fas fa-adjust"></i>
-    </div>
     <h1>Surya Ravi</h1>
     <p>CIST Student at UT Dallas | Data Science & Business Strategy Enthusiast</p>
     <div class="resume-button">
@@ -168,21 +139,10 @@
     </div>
   </header>
 
-  <!-- All sections from your previous version remain unchanged -->
-  <!-- You can continue copying the content below header from the previous code -->
+  <!-- Rest of your sections remain unchanged -->
 
   <footer>
     &copy; 2025 Surya Ravi | Built & hosted on GitHub Pages
   </footer>
-
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      document.documentElement.setAttribute(
-        "data-theme",
-        currentTheme === "dark" ? "light" : "dark"
-      );
-    }
-  </script>
 </body>
 </html>
